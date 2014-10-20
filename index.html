@@ -1,1 +1,367 @@
-Hello World
+﻿<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="utf-8">
+		<title>ЗнайDo</title>
+		<link rel="icon" href="Content/images/favicon.ico">
+		<link rel="shortcut icon" href="Content/images/favicon.ico" />
+		<link rel="stylesheet" href="Content/css/style.css">
+		<link rel="stylesheet" href="Content/css/camera.css">
+		<link rel="stylesheet" href="Content/css/form.css">
+		<script src="Content/js/jquery.js"></script>
+		<script src="Content/js/jquery-migrate-1.1.1.js"></script>
+		<script src="Content/js/superfish.js"></script>
+		<script src="Content/js/forms.js"></script>
+		<script src="Content/js/jquery.ui.totop.js"></script>
+		<script src="Content/js/jquery.equalheights.js"></script>
+		<script src="Content/js/jquery.easing.1.3.js"></script>
+		<script src="Content/js/jquery.ui.totop.js"></script>
+		<script src="Content/js/tms-0.4.1.js"></script>
+		<script>
+		    
+
+		    $(document).ready(function () {
+		        $('.slider_wrapper')._TMS({
+		            show: 0,
+		            pauseOnHover: false,
+		            prevBu: '.prev',
+		            nextBu: '.next',
+		            playBu: false,
+		            duration: 800,
+		            preset: 'fade',
+		            pagination: true,//'.pagination',true,'<ul></ul>'
+		            pagNums: false,
+		            slideshow: 8000,
+		            numStatus: false,
+		            banners: 'fade',
+		            waitBannerAnimation: false,
+		            progressBar: false
+		        });
+		    });
+		    $(document).ready(function () {
+		        !function () {
+		            var map = []
+                     , names = []
+                     , win = $(window)
+                     , header = $('header')
+                     , currClass
+		            $('.content').each(function (n) {
+		                map[n] = this.offsetTop
+		                names[n] = $(this).attr('id')
+		            })
+		            win
+                     .on('scroll', function () {
+                         var i = 0
+                         while (map[i++] <= win.scrollTop());
+                         if (currClass !== names[i - 2])
+                             currClass = names[i - 2]
+                         header.removeAttr("class").addClass(names[i - 2])
+                     })
+		        }();
+		    });
+		    function goToByScroll(id) {
+		        $('html,body').animate({ scrollTop: $("#" + id).offset().top }, 'slow');
+		    }
+		    $(document).ready(function () {
+		        $().UItoTop({ easingType: 'easeOutQuart' });
+		    });
+		</script>
+		<!--[if lt IE 8]>
+			<div style=' clear: both; text-align:center; position: relative;'>
+				<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+					<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+				</a>
+			</div>
+		<![endif]-->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<link rel="stylesheet" media="screen" href="css/ie.css">
+		<![endif]-->
+	</head>
+	<body class="">
+<!--==============================header=================================-->
+		<header class="page1">
+			<div class="container_12">
+				<div class="grid_12">
+					<h1><a href="#" onClick="goToByScroll('page1'); return false;">
+                        <img src="Content/images/logo_white.PNG" /></a></h1>
+					<div class="menu_block">
+						<nav class="">
+							<ul class="sf-menu">
+								<li class="current men"><a onClick="goToByScroll('page1'); return false;" href="#">Головна </a> <strong class="hover"></strong></li>
+								<li class="men1"><a onClick="goToByScroll('page2'); return false;" href="#">Про проект</a><strong class="hover"></strong></li>
+								<li class=" men2"><a onClick="goToByScroll('page3'); return false;" href="#">Галерея</a> <strong class="hover"></strong></li>
+								<li class=" men3"><a onClick="goToByScroll('page4'); return false;" href="#">Наші партнери</a> <strong class="hover"></strong></li>
+								<li class=" men4"><a onClick="goToByScroll('page5'); return false;" href="#">Контакти</a> <strong class="hover"></strong></li>
+							</ul>
+						</nav>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</header>
+<!--=======content================================-->
+<h2>Я знаю, я дію, я знайду можливість!</h2> 
+        
+        <div id="page1" class="content">
+            <div class="container_12"> 
+                <div class="text1">
+           Ти учень загально-освітної школи 7-9 класів? Полюбляєш бавитись мобільними чи комп'ютерними іграми, сидіти в інтернеті? 
+            Чи замислювався про те, що саме ти можеш вигадати свою гру чи соціальну мережу? 
+            Чи знаєш ти, що сфера розробки програмного забезпечення - це сама динамічна та перспективна галузь української економіки,
+             чи що ми займаємо 4 місце у світі за кількістю сертифікованих спеціалістів? Саме для того щоб розказати тобі більше про 
+            можливості, надати поштовх до саморозвитку та дати поради від майстрів своєї справи у неформальній обстановці з'явився наш 
+            проект. Ми будемо спілкуватися, грати, отримувати корисні знання та відкривати у собі натхнення. Ми запрошуємо усю охочу 
+            молодь до участі у нашому проекті. Поспішай заповнити анкету, кількість місць обмежена.
+             </div>
+                </div>
+            <br><br>
+			<div class="container_12">  
+				<div class="grid_12">
+					<div class="slider_wrapper" style="padding-bottom: 55px; padding-top: 25px;">
+						<ul class="items">
+					
+                            <li>
+								<img src="Content/images/spacer.gif" alt="">
+								<div class="caption banner bugaga">
+                                    <img class="shine" src="Content/images/mp1.jpg" />
+								</div>
+							</li>
+							<li>
+								<img src="Content/images/spacer.gif" alt="">
+								<div class="caption banner bugaga">
+                               <img class="shine" src="Content/images/mp2.jpg" />
+								</div>
+							</li>
+							<li>
+								<img src="Content/images/spacer.gif" alt="">
+								<div class="caption banner bugaga">
+                                    <img class="shine" src="Content/images/U3.jpg" />
+								</div>
+							</li>
+							<li>
+								<img src="Content/images/spacer.gif" alt="">
+								<div class="caption banner bugaga">
+                                    <img class="shine" src="Content/images/U7.jpg" />
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+		<div id="page2" class="content">
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="slogan">
+						<h3>Про проект</h3>
+						<div class="text1">
+								
+25 жовтня у Дніпропетровську пройде
+соціально-освітній проект "ЗнайDo!" спрямований на розвиток учнів 8-9
+класів загально-освітніх шкіл. Мета проекту - дати дітям натхнення,
+поштовх та можливості для подальшого розвитку у двух
+найперспективніших галузі Дніпропетровщини - ІТ технології. 
+Реалізація буде проводитись у креативній формі
+тренінгів у неформальній обстановці із тренерами та провідними
+спеціалістами ІТ компаній міста та навчальних центрів.
+ Проект реалізується в рамках програми «Майстерня громадської активності» за підтримки 
+Колегіуму ім. Теодора Гойса Фонду Роберта Боша та Об’єднання MitOst e.V. Фінансова підтримка: 
+Міністерство закордонних справ Німеччини. В Україні програма реалізується «Українською 
+мережею освіти дорослих та розвитку інновацій» за підтримки локальних партнерів.
+						</div>
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="box maxheight">
+                        <img src="Content/images/Head1.jpg" alt="">
+						<div class="text1">Кулініч Юлія</div>Керівник проекту
+					<div class="mycontact">
+				<a href="https://www.linkedin.com/profile/view?id=361154198&am.."> www.linkedin.com/in/KulinichYulia/</a>
+				<a href="yulia.kulinich@aiesec.net">yulia.kulinich@aiesec.net</a>
+					</div>	
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="box maxheight">
+                        <img src="Content/images/Head2.jpg" alt="">
+						<div class="text1">Сітало Владислав</div> Лектор. 	
+Учасник Google Summer of Code 2012. Проходив стажування в Microsoft Corporation. 
+						<div class="mycontact">
+							<a href="https://www.linkedin.com/in/vladyslavsitalo">www.linkedin.com/in/vladyslavsitalo</a>
+						</div>
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="box maxheight">
+                        <img src="Content/images/Head3.jpg" alt="">
+						<div class="text1">Нечепоренко Анастасія</div>Розробка проекту, web-підтримка
+						<div class="mycontact">
+							<a href="https://www.linkedin.com/pub/anastacia-necheporenko/a6/861/864"> www.linkedin.com/pub/anastacia-necheporenko </a>
+							<a href="anastacian42@gmail.com">anastacian42@gmail.com</a>
+						</div>
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="box maxheight">
+                        <img src="Content/images/Head4.jpg" />
+						<div class="text1">Мартинець Ольга</div> Допомога у розробці проекта
+						<div class="mycontact">
+							<a href="https://www.facebook.com/olha.martynets">www.facebook.com/olha.martynets</a>
+						</div>
+					</div>
+				</div>
+                	<div class="grid_3">
+					<div class="box maxheight">
+                        <img src="Content/images/Head5.jpg" />
+						<div class="text1">Шуляка Анастасія</div> Допомога у розробці проекта
+						<div class="mycontact">
+							<a href="Shulyaka@hotmail.com">Shulyaka@hotmail.com</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page3" class="content">
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="slogan">
+						<h2>Галерея</h2>
+					</div>
+				</div>
+				<div class="grid_3">
+                    <img src="Content/images/Im1.jpg" />
+				</div>
+				<div class="grid_3">
+                    <img src="Content/images/Im2.jpg" />
+				</div>
+				<div class="grid_3">
+                    <img src="Content/images/Im3.jpg" />
+				</div>
+				<div class="grid_3">
+                    <img src="Content/images/U3.jpg" />  
+				</div>
+                <!--<div class="grid_3">
+                    <img src="Content/images/U3.jpg" />
+				</div>
+                <div class="grid_3">
+                    <img src="Content/images/U4.jpg" />
+				</div>-->-->
+			</div>
+		</div>
+		<div id="page4" class="content">
+			<div class="container_12">
+				<div class="grid_12">
+					<h3>Наші партнери</h3>
+				</div>
+				<div class="companies">
+					<div class="grid_3">
+                        <img src="Content/images/Ulogo1.jpg" />
+						<div class="text1">Майстерня громадської активності</div> Програма неформальної громадянської освіти молоді та 
+підтримки її громадських, соціальних та культурних ініціатив в Україні, Польщі та Білорусі. В 
+рамках цієї програми молодь покращує життя своїх громад через невеликі проекти, отримуючи 
+через них поштовхи для саморозвитку та нові «живі» знання. 
+						<br>
+						<a href="http://www.maysternya.org">www.maysternya.org</a>
+
+                        
+					</div>
+					<div class="grid_3">
+                        <img src="Content/images/Ulogo2.jpg" />
+						<div class="text1">Колегіум 
+ім. Теодора Гойсса</div>
+						<a href="http://www.theodor-heuss-kolleg.de/">www.theodor-heuss-kolleg.de/</a>
+                        <br /><br>
+                        <img src="Content/images/CosmosLogo.gif" />
+						<div class="text1">Національний центр аерокосмічної освіти молоді ім. О.М. Макарова</div>
+						<a href="http://www.unaec.dp.ua/">www.unaec.dp.ua/</a>
+					</div>
+					<div class="grid_3">
+                        <img src="Content/images/Ulogo3.jpg" />
+						<div class="text1">Освіта та інновації</div>Некомерційною організацією, яка працює на всій території України та займається питаннями менеджменту якості неформальної освіти та освіти дорослих.
+						<br>
+						<a href="https://twitter.com/UNAEDI_NGO">twitter.com/UNAEDI_NGO</a>
+                        <br><br>
+                              <img src="Content/images/logoShag1.jpg" />
+						<div class="text1">Комп'юторна академія Шаг</div>
+						<a href="http://itstep.org/">itstep.org/</a>
+					</div>
+					<div class="grid_3">
+                        <img src="Content/images/Ulogo4.jpg" />
+						<div class="text1">Міністерство закордонних справ Німеччини</div>Фінансова допомога проектам.
+						<br>
+						<a href="http://www.auswaertiges-amt.de">www.auswaertiges-amt.de</a>
+					</div>			
+				</div>
+                      	<<!--div class="grid_3">
+                              <img src="Content/images/logoShag1.jpg" />
+						<div class="text1">Комп'юторна академія Шаг</div>
+						<a href="http://itstep.org/">itstep.org/</a>-->
+					</div>
+                      	<!--<div class="grid_3">
+                         <img src="Content/images/CosmosLogo.gif" />
+						<div class="text1">Національний центр аерокосмічної освіти молоді ім. О.М. Макарова</div>
+						<a href="http://www.unaec.dp.ua/">www.unaec.dp.ua/</a>
+
+				</div>-->
+			</div>
+		</div>
+		<div id="page5" class="content">
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="slogan">
+						<h2>Приєднуйтесь до нас!</h2>
+                        <br>
+						<div class="text1">
+							
+                            <br> <br>
+                            <a href="http://goo.gl/forms/llyvFF8Jfi">Зареєструватися для прийняття участі в тренінгу</a>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="map">
+      					<div class="grid_3">
+						<div class="text1">Адреса</div>
+						<address>
+							<dl>
+								<dt>Україна 49005, м. Дніпропетровськ, пр. Гагаріна, 26<br>	
+                                    початок  реєстрації о 9.00 <br />
+                                    початок заходу о 10.00 <br />
+                                    аудиторія 22 <br />
+								</dt>
+								<dd><span>Telephone: +380980168481 Юлия</span></dd>
+								<dd><span>E-mail: znaydo2014@gmail.com</span></dd>
+								<dd><span>Skype: Yulia Kulinich</span></dd>
+							</dl>
+						</address>
+					</div>
+					 <div class="grid_3">
+						<div class="text1">&nbsp;</div>
+						<figure class="">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2646.603510331346!2d35.052223999999995!3d48.444948999999994!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe32dca8e7e2d%3A0x98db86ba041ab914!2z0L_RgNC-0YHQvy4g0JPQsNCz0LDRgNGW0L3QsCwgMjYsINCU0L3RltC_0YDQvtC_0LXRgtGA0L7QstGB0YzQuiwg0JTQvdGW0L_RgNC-0L_QtdGC0YDQvtCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0LjQvdCw!5e0!3m2!1sru!2s!4v1413825905164" width="600" height="450" frameborder="0" style="border:0"></iframe>
+                        </figure>
+					</div>
+					<div class="grid_5 prefix_1">
+                        <br>
+                         <br>
+                        <br>
+                        <img src="Content/images/lp2.jpg" />
+			</div>
+		</div>
+<!--==============================footer=================================-->
+		<footer>
+			<div class="container_12">
+				<div class="grid_12">
+                       <br> <br>    <br> <br>
+					<div class="copy">
+				   Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</footer>
+	</body>
+</html>
