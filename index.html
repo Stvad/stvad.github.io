@@ -1,404 +1,221 @@
 <!DOCTYPE html>
-<html lang="uk">
-	<head>
-		<meta charset="utf-8">
-		<title>ЗнайDo</title>
-		<link rel="icon" href="Content/images/favicon.ico">
-		<link rel="shortcut icon" href="Content/images/favicon.ico" />
-		<link rel="stylesheet" href="Content/css/style.css">
-		<link rel="stylesheet" href="Content/css/camera.css">
-		<link rel="stylesheet" href="Content/css/form.css">
-		<script src="Content/js/jquery.js"></script>
-		<script src="Content/js/jquery-migrate-1.1.1.js"></script>
-		<script src="Content/js/superfish.js"></script>
-		<script src="Content/js/forms.js"></script>
-		<script src="Content/js/jquery.ui.totop.js"></script>
-		<script src="Content/js/jquery.equalheights.js"></script>
-		<script src="Content/js/jquery.easing.1.3.js"></script>
-		<script src="Content/js/jquery.ui.totop.js"></script>
-		<script src="Content/js/tms-0.4.1.js"></script>
-		<script>
-		    
+<html lang="en">
+<head>
+ 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<title>VirtualWorkplace</title>
+	 
+	<link href="css/bootstrap.css" rel="stylesheet">
+	 
+	<link href="css/main.css" rel="stylesheet">
+ 
+	<!--[if lt IE 9]>
+	  <script src="js/html5shiv.js"></script>
+	  <script src="js/respond.min.js"></script>
+	<![endif]-->
+ 
+	<link rel="shortcut icon" href="images/favicon.png">
+	<script src="js/pace.js"></script>
+ 
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+</head>
 
-		    $(document).ready(function () {
-		        $('.slider_wrapper')._TMS({
-		            show: 0,
-		            pauseOnHover: false,
-		            prevBu: '.prev',
-		            nextBu: '.next',
-		            playBu: false,
-		            duration: 800,
-		            preset: 'fade',
-		            pagination: true,//'.pagination',true,'<ul></ul>'
-		            pagNums: false,
-		            slideshow: 8000,
-		            numStatus: false,
-		            banners: 'fade',
-		            waitBannerAnimation: false,
-		            progressBar: false
-		        });
-		    });
-		    $(document).ready(function () {
-		        !function () {
-		            var map = []
-                     , names = []
-                     , win = $(window)
-                     , header = $('header')
-                     , currClass
-		            $('.content').each(function (n) {
-		                map[n] = this.offsetTop
-		                names[n] = $(this).attr('id')
-		            })
-		            win
-                     .on('scroll', function () {
-                         var i = 0
-                         while (map[i++] <= win.scrollTop());
-                         if (currClass !== names[i - 2])
-                             currClass = names[i - 2]
-                         header.removeAttr("class").addClass(names[i - 2])
-                     })
-		        }();
-		    });
-		    function goToByScroll(id) {
-		        $('html,body').animate({ scrollTop: $("#" + id).offset().top }, 'slow');
-		    }
-		    $(document).ready(function () {
-		        $().UItoTop({ easingType: 'easeOutQuart' });
-		    });
-		</script>
-		<!--[if lt IE 8]>
-			<div style=' clear: both; text-align:center; position: relative;'>
-				<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-					<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+<body>
+	<div class="preloader"></div>
+	
+    <! -- ******************** MASTHEAD SECTION ******************** -->	
+	<main id="top" class="masthead" role="main">
+		<div class="container">
+			<!-- <div class="logo"> <a href="index.html#"><img src="images/logo.png" alt="logo"></a> -->
+			<div class="logo_header"> <a href="index.html#">Virtual Workplace</a>
+			</div>
+ 
+			<h1>Build your portable private office into VR and get your work done comfortably and efficiently</strong></h1>
+ 
+			<div class="row">
+				<div class="col-md-6 col-sm-12 col-md-offset-3 subscribe">
+					<form action="https://virtualworkplace.us10.list-manage.com/subscribe/post?u=319bcaad92ad1bb4f2041ec1c&amp;id=a5cf32c1c5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<div class="form-group">
+							<div class="col-md-7 col-sm-6 col-sm-offset-1 col-md-offset-0">
+								<input class="form-control input-lg" name="EMAIL" type="email" id="address" placeholder="Enter your email" data-validate="validate(required, email)" required="required">
+							</div>
+							<div class="col-md-5 col-sm-4">
+								 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    							<div style="position: absolute; left: -5000px;"><input type="text" name="b_319bcaad92ad1bb4f2041ec1c_a5cf32c1c5" tabindex="-1" value=""></div>
+								<button type="submit" class="btn btn-success btn-lg">GET EARLY ACCESS</button>
+							</div>
+						</div>
+					</form>
+					<span id="result" class="alertMsg"></span> </div>
+				</div>
+ 
+				<a href="index.html#explore" class="scrollto">
+				<p>SCROLL DOWN TO EXPLORE</p>
+				<p class="scrollto--arrow"><img src="images/scroll_down.png" alt="scroll down arrow"></p>
 				</a>
+		</div><! --/container -->
+	</main><! --/main -->
+ 
+
+    <! -- ******************** FEATURES SECTION ******************** -->	
+	<div class="container" id="explore">
+ 
+		<div class="section-title">
+			<h2>Transform a space around you into a working environment</h2>
+			<h4>With Virtual Workplace you would be able to design your workplace in any way you want to</h4>
+		</div>
+
+		<section class="row heroimg breath">
+			<div class="col-md-12 text-center"> 
+				<img src="images/screenshot_2.png" alt="flat-mockup-template">
 			</div>
-		<![endif]-->
-		<!--[if lt IE 9]>
-			<script src="js/html5shiv.js"></script>
-			<link rel="stylesheet" media="screen" href="css/ie.css">
-		<![endif]-->
-	</head>
-	<body class="">
-<!--==============================header=================================-->
-		<header class="page1">
-			<div class="container_12">
-				<div class="grid_12">
-					<h1><a href="#" onClick="goToByScroll('main_header'); return false;">
-                        <img src="Content/images/logo_white.PNG" /></a></h1>
-					<div class="menu_block">
-						<nav class="">
-							<ul class="sf-menu">
-								<li class="current men"><a onClick="goToByScroll('main_header'); return false;" href="#">Головна </a> <strong class="hover"></strong></li>
-								<li class="men1"><a onClick="goToByScroll('page2'); return false;" href="#">Про проект</a><strong class="hover"></strong></li>
-								<li class=" men2"><a onClick="goToByScroll('page3'); return false;" href="#">Галерея</a> <strong class="hover"></strong></li>
-								<li class=" men3"><a onClick="goToByScroll('page4'); return false;" href="#">Наші партнери</a> <strong class="hover"></strong></li>
-								<li class=" men4"><a onClick="goToByScroll('page5'); return false;" href="#">Контакти</a> <strong class="hover"></strong></li>
-							</ul>
-						</nav>
-						<div class="clear"></div>
+		</section><! --/section -->
+ 
+		<div class="section-title">
+			<h2>About us</h2>
+			<h4>Virtual Workplace provides user ability to create his own office in Virtual Reality and 
+				extend his working environment in a way that was never available before. </br>
+				One of our primary concerns is <strong>mobility</strong>. Traditional way to extend working 
+				environment is to attach additional monitors to your computer. But this approach is 
+				expensive, complex and it grately reduces your mobility. </br>
+				We are giving user ability to interact with all his <strong>usual applications</strong> in a new way.
+				We are using Virtual Reality headset to display the information. And providing support
+				for usuall input devices like mouse and keyboard as well as new ways of interacting with 
+				environment like Intel RealSense.  </h4>
+		</div>
+		
+		<section class="row features">
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail"> 
+					<img src="images/mobile_vr_750_496_opacity.png" alt="analytics-icon">
+					<div class="caption">
+						<h3>Keep your workplace mobile</h3>
+						<p>With Virtual Workplace you are able to bring your extended workplace anywhere you go.</p>
+					</div>
+				</div><! --/thumbnail -->
+			</div><! --/col-sm-6-->
+ 
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail"> 
+					<img src="images/grid-panel_750_stretched.png" alt="analytics-icon">
+					<div class="caption">
+						<h3>Work with a familiar apps in a new way</h3>
+						<p>All usual applicatins are available. No adaptation needed.</p>
+					</div>
+				</div><! --/thumbnail -->
+			</div><! --/col-sm-6-->
+ 
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail"> 
+					<img src="images/focus.jpg" alt="analytics-icon">
+					<div class="caption">
+						<h3>Focus on a particular problem</h3>
+						<p>With Virtual Workplace you are able to create different environments for different tasks</p>
+					</div>
+				</div><! --/thumbnail -->
+			</div><! --/col-sm-6-->
+ 
+			<div class="col-sm-6 col-md-3">
+				<div class="thumbnail"> 
+					<img src="images/realsense_750_496.png" alt="analytics-icon">
+					<div class="caption">
+						<h3>Use natural gestures to control environment</h3>
+						<p>We have implemented support for Intel RealSense camera to provide natural interaction experience for users.</p>
+					</div>
+				</div><! --/thumbnail -->
+			</div><! --/col-sm-6-->
+		</section><! --/section -->
+ 
+
+	    
+	</div><! --/container -->
+ 
+
+	    <div class="container">
+ 
+			
+	    <! -- ******************** FAQ ******************** -->	  
+ 
+		<div class="section-title">
+			<h5>Frequently Asked Questions</h5>
+		</div>
+		
+		<section class="row faq breath">
+			<div class="col-md-6">
+				<h6>How does the free trial work?</h6>
+				<p>Our 30 day trial is 100% free and does not require credit card information to start. If at the end of your trial you would like to upgrade, great. If not, you can cancel your account altogether, or let us mark it as inactive for you to come back to later.</p>
+				<h6>Can I switch plans later?</h6>
+				<p>Absolutely. You can switch between our paid plans, or cancel your account altogether, whenever you like. We will adjust any payments accordingly.</p>
+			</div><! --/col-md-6 -->
+			
+			<div class="col-md-6">
+				<h6>Do I need to choose a plan now?</h6>
+				<p>No. You get the full featured, unlimited version of our service completely free for 30 days. Once you're ready to upgrade, you may choose a plan which suits your needs.</p>
+				<h6>What payment types do you accept?</h6>
+				<p>We accept payments from MasterCard, Visa, Visa Debit and American Express. We do not accept PayPal. Remember, you do not need to supply card details to start your free trial.</p>
+			</div><! --/col-md-6 -->
+		</section><! --/section faq -->
+ 
+	</div><! --/container -->
+ 
+	    <! -- ******************** FOOTER ******************** -->	  
+		<main class="footercta" role="main">
+			<div class="container">
+				<h1>The Most <strong>Powerful Way</strong> <br>
+					to <strong>improve</strong> your productivity</h1>
+ 
+				<div class="row">
+					<div class="col-md-12 breath text-center"> 
+						<a href="index.html#top" class="btn btn-success btn-lg gototop">GET EARLY ACCESS</a> 
 					</div>
 				</div>
-				<div class="clear"></div>
-			</div>
-		</header>
-<!--=======content================================-->
-<h2 id="main_header">Я знаю, я дію, я знайду можливість!</h2> 
-        
-        <div id="page1" class="content">
-            <div class="container_12"> 
-                <div class="text1">
-           Ти учень загальноосвітньої школи 9-11 класів? Полюбляєш бавитись мобільними чи комп'ютерними іграми, сидіти в Інтернеті? Чи замислювався ти про те, що сфера розробки програмного забезпечення - це найбільш динамічна та перспективна галузь української економіки? Україна займає 4 місце у світі за кількістю сертифікованих спеціалістів! Саме для того, щоб розповісти тобі більше про можливості, надати поштовх до саморозвитку та надати поради від майстрів своєї справи у неформальній обстановці з'явився наш проект. Ми будемо спілкуватися із провідними спеціалістами, отримувати корисні знання та відкривати у собі натхнення. Ми запрошуємо усю охочу молодь до участі у нашому проекті 25 жовтня о 10.00 
-           (початок регістрації о 9.00 )до приміщення Аерокосмічного центру освіти молоді імені Макарова.
-           <br> <br>
-           Поспішай заповнити <a href="http://goo.gl/forms/llyvFF8Jfi">АНКЕТУ</a>, кількість місць обмежена!
-             </div>
+			</div><! --/container -->
+		</main><! --/main -->
+ 
+		<div class="container">
+			<section class="row breath">
+				<div class="col-md-12 footerlinks">
+					<p>&copy; 2015 VirtualWorkplace.co. All Rights Reserved</p>
+				</div>
+				<div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
                 </div>
-            <br><br>
-			<div class="container_12">  
-				<div class="grid_12">
-					<div class="slider_wrapper" style="padding-bottom: 55px; padding-top: 190px;">
-						<ul class="items">
-					
-                            <li>
-								<img src="Content/images/spacer.gif" alt="">
-								<div class="caption banner bugaga">
-                                    <img class="shine" src="https://pp.vk.me/c625428/v625428662/7908/8Qac0yR24eY.jpg" />
-								</div>
-							</li>
-							<li>
-								<img src="Content/images/spacer.gif" alt="">
-								<div class="caption banner bugaga">
-                               <img class="shine" src="https://pp.vk.me/c625428/v625428662/792c/uur2bLJhz5M.jpg" />
-								</div>
-							</li>
-							<li>
-								<img src="Content/images/spacer.gif" alt="">
-								<div class="caption banner bugaga">
-                                    <img class="shine" src="https://pp.vk.me/c625428/v625428662/791a/hp0w8o2tvTE.jpg" />
-								</div>
-							</li>
-							<li>
-								<img src="Content/images/spacer.gif" alt="">
-								<div class="caption banner bugaga">
-                                    <img class="shine" src="https://pp.vk.me/c625428/v625428662/7911/7puDsCTATFw.jpg" />
-								</div>
-							</li>
+			</section><! --/section -->
+		</div><! --/container -->
+ 
+ 
+ 
+ 
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/easing.js"></script>
+<script src="js/nicescroll.js"></script>
+ 
+ 
+<script>
 
-							<li>
-								<img src="Content/images/spacer.gif" alt="">
-								<div class="caption banner bugaga">
-                                    <img class="shine" src="https://pp.vk.me/c625428/v625428662/7935/oa3yo294LMk.jpg" />
-								</div>
-							</li>
 
-							<li>
-								<img src="Content/images/spacer.gif" alt="">
-								<div class="caption banner bugaga">
-                                    <img class="shine" src="https://pp.vk.me/c625428/v625428662/7923/I6OctGCHvjM.jpg" />
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+ $(function() {
+    $('.scrollto, .gototop').bind('click',function(event){
+		 var $anchor = $(this);
+		 $('html, body').stop().animate({
+         scrollTop: $($anchor.attr('href')).offset().top
+          }, 1500,'easeInOutExpo');
+     event.preventDefault();
+      });
+  });
         
-		<div id="page2" class="content">
-			<div class="container_12">
-				<div class="grid_12">
-					<div class="slogan">
-						<h3>Про проект</h3>
-						<div class="text1">
-Наш проект "ЗнайDo!" спрямований на розвиток учнів 9-11 класів загальноосвітніх шкіл. Мета проекту - дати молоді натхнення, поштовх та можливості для подальшого розвитку у найперспективнішій галузі Дніпропетровщини та усієї України - ІТ технологіях. Реалізація буде проводитись у креативній формі тренінгів у неформальній обстановці із тренерами та провідними спеціалістами ІТ компаній міста та навчальних центрів. 
-На проекті Ви поспілкуєтесь із людиною, яка будучи студентом мала змогу працювати у провідних компаніях світу та дізнаєтесь які міжнародні стажування/програми/можливості відкриті для студентів та школярів України. 
-Це та багато іншого, Ви будете в змозі узнати та знайти на нашому проекті вже цієї суботи. Тож дійте!
-						</div>
-					</div>
-					<h3>Над проектом працювали:</h4><br><br>
-				</div>
-				<div class="grid_3">
 
-					<div class="box maxheight">
-                        <img src="Content/images/Head1.jpg" alt="">
-						<div class="text1">Кулініч Юлія</div>Керівник проекту, лектор
-					<div class="mycontact">
-				<a href="https://www.linkedin.com/pub/юлия-кулинич/a0/b49/332/en"> LinkedIn</a><br>
-				<a href="mailto:yulia.kulinich@aiesec.net">Mail</a>
-					</div>	
-					</div>
-				</div>
-				
-						
-				<div class="grid_3">
-					<div class="box maxheight">
-                        <img src="Content/images/Head3.jpg" alt="">
-						<div class="text1">Нечепоренко Анастасія</div>Розробка проекту, web-підтримка
-						<div class="mycontact">
-							<a href="https://www.linkedin.com/pub/anastacia-necheporenko/a6/861/864"> LinkedIn </a><br>
-							<a href="mailto:anastacian42@gmail.com">Mail</a>
-						</div>
-					</div>
-				</div>
-				<div class="grid_3">
-					<div class="box maxheight">
-                        <img src="Content/images/Head4.jpg" />
-						<div class="text1">Мартинець Ольга</div> Допомога у розробці проекта
-						<div class="mycontact">
-							<a href="https://www.facebook.com/olha.martynets">Facebook</a>
-						</div>
-					</div>
-				</div>
-                <div class="grid_3">
-					<div class="box maxheight">
-                       <img src="Content/images/Head6.jpg" />
-						<div class="text1">Анастасія Ігнатюк</div> Допомога у розробці проекта
-						<div class="mycontact">
-							<a href="mailto:nastyalisichka@gmail.com">Mail</a><br>
-							<a href="https://www.linkedin.com/pub/anastasiia-ignatiuk/98/a..">LinkedIn</a><br>
-                                               	<a href="https://www.facebook.com/anastasia.ignatiuk">Facebook</a><br>
-                                                       <a href = "https://vk.com/id8235496">VK</a><br>
-                                                       <a href = "skype:DN280990IAV" >Skype</a>
-						</div>
-					</div>
-				</div>
-                	<div class="grid_3">
-					<div class="box maxheight">
-                        <img src="Content/images/Head5.jpg" />
-						<div class="text1">Шуляка Анастасія</div> Допомога у розробці проекта, лектор
-						<div class="mycontact">
-							<a href="mailto:Shulyaka@hotmail.com">Mail</a>
-						</div>
-					</div>
-				</div>
-                <div class="grid_3">
-					<div class="box maxheight">
-                        <img src="Content/images/Head2.jpg" alt="">
-				<div class="text1">Сітало Владислав</div> Лектор. 	
-Учасник Google Summer of Code 2012. Проходив стажування в Microsoft Corporation 
-						<div class="mycontact">
-							<a href="https://www.linkedin.com/in/vladyslavsitalo">LinkedIn</a><br>
-							<a href="mailto:root@stvad.org">Mail</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="page3" class="content">
-			<div class="container_12">
-				<div class="grid_12">
-					<div class="slogan">
-						<h2>Галерея</h2>
-					</div>
-				</div>
-				<div class="grid_3">
-                    <img src="Content/images/presentation/1.jpg" />
-				</div>
-				<div class="grid_3">
-                    <img src="Content/images/presentation/2.jpg" />
-				</div>
-				<div class="grid_3">
-                    <img src="Content/images/presentation/3.jpg" />
-				</div>
-				<div class="grid_3">
-                    <img src="Content/images/presentation/4.jpg" />  
-				</div>
-				<div class="grid_3">
-                    <img src="Content/images/presentation/5.jpg" />  
-				</div>
-				<div class="grid_3">
-                    <img src="Content/images/presentation/6.jpg" />  
-				</div>
-				<div class="grid_3">
-                    <img src="Content/images/presentation/7.jpg" />  
-				</div>
-				<div class="grid_3">
-                    <img src="Content/images/presentation/8.jpg" />  
-				</div>
-
-                <!--<div class="grid_3">
-                    <img src="Content/images/U3.jpg" />
-				</div>
-                <div class="grid_3">
-                    <img src="Content/images/U4.jpg" />
-				</div>-->
-			</div>
-		</div>
-		<div id="page4" class="content">
-			<div class="container_12">
-				<div class="grid_12">
-                    <div class="slogan">
-                    <h3>Наші партнери</h3> 
-                    <div class="text1">
-					Проект реалізується в рамках програми «Майстерня громадської активності» за підтримки Колегіуму ім. Теодора Гойса, Фонду Роберта Боша та Об’єднання MitOste.V. Фінансова підтримка: Міністерство закордонних справ Німеччини. В Україні програма реалізується
-					«Українською мережею освіти дорослих та розвитку інновацій» за підтримки локальних партнерів.
-					</div>
-                        </div>
-				</div>
-				
-				<div class="companies">
-					<div class="grid_3">
-                        <img src="Content/images/Ulogo1.jpg" />
-						<div class="text1">Майстерня громадської активності</div> Програма неформальної громадянської освіти молоді та 
-підтримки її громадських, соціальних та культурних ініціатив в Україні, Польщі та Білорусі. В 
-рамках цієї програми молодь покращує життя своїх громад через невеликі проекти, отримуючи 
-через них поштовхи для саморозвитку та нові «живі» знання. 
-						<br>
-						<a href="http://www.maysternya.org">www.maysternya.org</a>
-
-                        
-					</div>
-					<div class="grid_3">
-                        <img src="Content/images/Ulogo2.jpg" />
-						<div class="text1">Колегіум 
-ім. Теодора Гойсса</div>
-						<a href="http://www.theodor-heuss-kolleg.de/">www.theodor-heuss-kolleg.de/</a>
-                        <br /><br>
-                        <img src="Content/images/CosmosLogo.gif" />
-						<div class="text1">Національний центр аерокосмічної освіти молоді ім. О.М. Макарова</div>
-						<a href="http://www.unaec.dp.ua/">www.unaec.dp.ua/</a>
-					</div>
-					<div class="grid_3">
-                        <img src="Content/images/Ulogo3.jpg" />
-						<div class="text1">Освіта та інновації</div>Некомерційною організацією, яка працює на всій території України та займається питаннями менеджменту якості неформальної освіти та освіти дорослих.
-						<br>
-						<a href="https://twitter.com/UNAEDI_NGO">twitter.com/UNAEDI_NGO</a>
-                  	</div>
-					<div class="grid_3">
-                        <img src="Content/images/Ulogo4.jpg" />
-						<div class="text1">Міністерство закордонних справ Німеччини</div>Фінансова допомога проектам.
-						<br>
-						<a href="http://www.auswaertiges-amt.de">www.auswaertiges-amt.de</a>
-					</div>			
-				</div>
-               
-                      	<<!--div class="grid_3">
-                              <img src="Content/images/logoShag1.jpg" />
-						<div class="text1">Комп'юторна академія Шаг</div>
-						<a href="http://itstep.org/">itstep.org/</a>-->
-					</div>
-                      	<!--<div class="grid_3">
-                         <img src="Content/images/CosmosLogo.gif" />
-						<div class="text1">Національний центр аерокосмічної освіти молоді ім. О.М. Макарова</div>
-						<a href="http://www.unaec.dp.ua/">www.unaec.dp.ua/</a>
-
-				</div>-->
-			</div>
-		</div>
-		<div id="page5" class="content">
-			<div class="container_12">
-				<div class="grid_12">
-					<div class="slogan">
-						<h2>Приєднуйтесь до нас!</h2>
-                        <br>
-						<div class="text1">
-							
-                            <br> <br>
-                            <a href="http://goo.gl/forms/llyvFF8Jfi">Зареєструватися для прийняття участі в тренінгу</a>
-						</div>
-					</div>
-				</div>
-				<div class="clear"></div>
-				<div class="map">
-      					<div class="grid_3">
-						<div class="text1">Адреса</div>
-						<address>
-							<dl>
-								<dt>Україна 49005, м. Дніпропетровськ, пр. Гагаріна, 26<br>	
-                                    початок  реєстрації о 9.00 <br />
-                                    початок заходу о 10.00 <br />
-                                    аудиторія 22 <br />
-								</dt>
-								<dd><span>Telephone: +380980168481 Юлия</span></dd>
-								<dd><span>E-mail: znaydo2014@gmail.com</span></dd>
-								<dd><span>Skype: Yulia Kulinich</span></dd>
-							</dl>
-						</address>
-					</div>
-					 <div class="grid_3">
-						<div class="text1">&nbsp;</div>
-						<figure class="">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2646.603510331346!2d35.052223999999995!3d48.444948999999994!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe32dca8e7e2d%3A0x98db86ba041ab914!2z0L_RgNC-0YHQvy4g0JPQsNCz0LDRgNGW0L3QsCwgMjYsINCU0L3RltC_0YDQvtC_0LXRgtGA0L7QstGB0YzQuiwg0JTQvdGW0L_RgNC-0L_QtdGC0YDQvtCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0LjQvdCw!5e0!3m2!1sru!2s!4v1413825905164" width="600" height="450" frameborder="0" style="border:0"></iframe>
-                        </figure>
-					</div>
-					<div class="grid_5 prefix_1">
-                        <br>
-                       <br> 
-                        <br>
-                        <img src="Content/images/lp2.jpg" />
-                        <div class="text1" > Змінюй світ вже сьогодні!</div>
-			</div>
-		</div>
-<!--==============================footer=================================-->
-		<footer>
-			<div class="container_12">
-				<div class="grid_12">
-                       <br> <br>    <br> <br>
-					<div class="copy">
-				   Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a>
-					</div>
-				</div>
-				<div class="clear"></div>
-			</div>
-		</footer>
-	</body>
+</script>
+ 
+</body>
 </html>
